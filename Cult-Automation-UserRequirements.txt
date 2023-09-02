@@ -1,0 +1,28 @@
+Background
+- In cult you can only book 4 days in advance.
+- Booking for the 4th day from the current day opens at 10:00 PM IST everyday.
+- Classes are allocated on a first come first serve basis.
+- Fetch center - “center” in postman.
+- Fetch classes per centre - “classes” in postman.
+- Book with class id - “book” in postman.
+
+
+Requirements
+- Accept as input - preferences in order of preference
+    - Center preferences
+        - [agara, Cubbon park, etc]
+    - Class type preferences
+        - [boxing, s&c, etc]
+    - Time preferences
+        - [6:30AM, 7:00AM, etc]
+    - Exclusion days
+        - [sat, sun]
+- Book the class with the highest preference setting on the last day that it’s available(4th day from today usually).
+- It should run every day, so that from the 4th day from now, classes are booked daily if available
+- If the class is booked or not able to find a class with the given criteria, send a SMS to a configured mobile number/ send an email to the a configured email address.
+
+Non functional requirements
+- Log to appropriate amounts in the program run.
+- Should be very cheap, ideally free to operate and run.
+- It should have alarms to notify if something is wrong or needs attends.
+- Use AWS for infrastructure.
